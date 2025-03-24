@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "edge",
+            "sourceMaps": true,
+            "request": "launch",
+            "name": "localhost (edge)",
+            "url": "https://localhost:50773",
+            "webRoot": "${workspaceFolder}"
+        } 
+    ]
+}
