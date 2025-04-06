@@ -1,0 +1,12 @@
+<li>
+  <div class="wish-list-item">
+    <div class="form-check">
+        <label class="form-check-label" [ngClass]="cssClass">
+            <input class="chceckbox" type="checkbox" [(ngModel)]="item.isComplete"> {{item.wishText}}
+        </label>
+    </div>
+    <div>
+        <button class="btn-close" (click)="deleteWish(item)"></button>
+    </div>
+  </div>
+ </li>

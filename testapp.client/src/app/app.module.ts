@@ -1,19 +1,22 @@
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
+import { WishModule } from './wish/wish.module';
+import { WishComponent } from './wish/wish.component';
+import { ContactModule } from './contact/contact.module';
+
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
     ],
     imports: [
-        BrowserModule, HttpClientModule,
+        BrowserModule,
         AppRoutingModule,
-        FormsModule  
+        WishModule,
+        ContactModule
     ],
     providers: [],
     bootstrap: [AppComponent]

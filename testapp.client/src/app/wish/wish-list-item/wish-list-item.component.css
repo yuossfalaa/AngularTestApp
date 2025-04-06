@@ -1,0 +1,11 @@
+.strikOut{
+    text-decoration:line-through;
+    color:#ccc;
+}
+.wish-list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}

@@ -1,70 +1,9 @@
-<body>
+﻿<body>
     <div class="main-container">
-        <div class="form-container">
-            <img id="stripe-logo" src="stripe.png" />
-            <form class="payment-info-form">
-                <h1 id="upgrade-title">
-                    Upgrade to Plus
-                </h1>
-                <h4 id="upgrad-subtitle">
-                    upgrade today and toke your Ai-powered productivity to the next level.
-                </h4>
-                <label for="billinginfo-name">
-                    Billed to
-                </label>
-                <input type="text" name="billinginfo-name" placeholder="Enter first & last name" />
-
-                <label for="billinginfo-payment-opt">
-                    Payment Details
-                </label>
-                <div class="payment-opt-container">
-                    <div class="payment-option" (click)="selectOption($event)">
-                        <input type="radio" name="billinginfo-payment-opt" id="card" class="radio-payment-opt" />
-                        <img src="credit-card.png" alt="Credit Card">
-                        <span>Credit Card</span>
-                    </div>
-                    <div class="payment-option" (click)="selectOption($event)">
-                        <input type="radio" name="billinginfo-payment-opt" id="bank" class="radio-payment-opt" />
-                        <img src="bank.png" alt="Bank Transfer">
-                        <span>Bank Transfer</span>
-                    </div>
-                    <div class="payment-option" (click)="selectOption($event)">
-                        <input type="radio" name="billinginfo-payment-opt" id="points" class="radio-payment-opt" />
-                        <img src="point.png" alt="Points">
-                        <span>Points</span>
-                    </div>
-                </div>
-
-                <label for="billinginfo-email">
-                    Email Address
-                </label>
-                <input type="text" name="billinginfo-email" placeholder="Enter email address" />
-                <div class="country-postel-main-continer">
-                    <div class="country-postel-continer">
-                        <label for="country-info">Country</label>
-                        <select name="country-info">
-                            <option>Egypt</option>
-                            <option>USA</option>
-                        </select>
-                    </div>
-                    <div class="country-postel-continer">
-                        <label for="postel-info">Postal Code</label>
-                        <input type="text" name="postel-info" placeholder="00270" />
-                    </div>
-                </div>
-                <div class="options-container">
-                    <button class="cancel-button">
-                        Cancel
-                    </button>
-                    <button class="subscripe-button">
-                        Subscribe
-                    </button>
-                </div>
-
-            </form>
-        </div>
-        <div class="plan-container">
-
-        </div>
+        <router-outlet></router-outlet>
+      <div class="footer">
+        <button class="btn btn-primary" routerLink="/wish">Go to Home</button>
+        <button class="btn btn-secondary" (click)="$event.preventDefault(); goToContact();">Go to contacnt</button>
+      </div>
     </div>
 </body>

@@ -24,9 +24,13 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
+app.MapGet("/getwishs", () =>
+{
+    var path = Path.Combine(Directory.GetCurrentDirectory(), "wishes.json");
+    return Results.Text(File.ReadAllText(path), "application/json");
+});
 app.MapControllers();
 
-app.MapFallbackToFile("/index.html");
+
 
 app.Run();

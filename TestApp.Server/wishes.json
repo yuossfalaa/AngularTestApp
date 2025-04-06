@@ -1,0 +1,42 @@
+[
+    {
+        "wishText": "Learn a new programming language",
+        "isComplete": false
+    },
+    {
+        "wishText": "Travel to Japan",
+        "isComplete": false
+    },
+    {
+        "wishText": "Read 12 books this year",
+        "isComplete": true
+    },
+    {
+        "wishText": "Start a fitness routine",
+        "isComplete": false
+    },
+    {
+        "wishText": "Learn to play the guitar",
+        "isComplete": false
+    },
+    {
+        "wishText": "Volunteer for a local charity",
+        "isComplete": true
+    },
+    {
+        "wishText": "Take a cooking class",
+        "isComplete": false
+    },
+    {
+        "wishText": "Visit all 50 states in the USA",
+        "isComplete": false
+    },
+    {
+        "wishText": "Write a book",
+        "isComplete": false
+    },
+    {
+        "wishText": "Learn to meditate",
+        "isComplete": true
+    }
+]
